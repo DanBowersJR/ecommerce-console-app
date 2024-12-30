@@ -5,7 +5,7 @@ public class User {
     private String username;
     private String password;
     private String email;
-    private String role;
+    private String role; // Added role attribute
 
     // Constructor
     public User(int id, String username, String password, String email, String role) {
@@ -16,7 +16,7 @@ public class User {
         this.role = role;
     }
 
-    // Getter and Setter methods
+    // Getters and Setters
     public int getId() {
         return id;
     }
