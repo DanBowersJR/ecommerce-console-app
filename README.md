@@ -1,41 +1,65 @@
-E-Commerce Console Application - Bookstore
+# E-Commerce Console Application
 
-This is a console-based E-Commerce application built in Java with Maven and PostgreSQL. The project simulates an online Bookstore where users can register and perform role-based actions.
+This is a console-based E-Commerce application built using Java, Maven, and PostgreSQL. The project simulates an online marketplace where users can register and perform role-based actions such as browsing products, managing listings, and handling administrative tasks.
 
-Features:
+---
 
-User Roles:
+## Features
 
-Buyer: Browse and search for books.
-Seller: Add, update, delete, and view their books.
-Admin: Manage users and books.
-Secure Authentication:
+### User Roles
+1. **Buyer**:
+   - Browse all available products.
+   - Search for products by name.
+   
+2. **Seller**:
+   - Add new products with details (name, price, quantity).
+   - Update existing product information.
+   - Delete products.
+   - View their listed products.
+   
+3. **Admin**:
+   - View all users and products in the system.
+   - Delete users as necessary.
 
-Passwords are securely stored using BCrypt.
-Database Integration:
+---
 
-PostgreSQL is used to store users and books, with full CRUD operations.
-Console-Based Interface:
+### Secure Authentication
+Passwords are securely hashed and stored using BCrypt for enhanced security.
 
-Simple CLI for user interaction.
-Technology Used:
+---
 
-Programming Language: Java
-Build Tool: Maven
-Database: PostgreSQL
-Version Control: Git/GitHub
-Setup Instructions:
+### Database Integration
+PostgreSQL is used to store data:
+- Users Table: Stores user information, including username, password, role, and email.
+- Products Table: Stores product details, such as name, price, quantity, and seller ID.
+Full CRUD operations are supported: Create, Read, Update, and Delete.
 
-Clone the repository: git clone https://github.com/DanBowersJR/ecommerce-console-app.git cd ecommerce-console-app
+---
 
-Build the project: mvn clean install
+### Console-Based Interface
+The application uses a simple Command-Line Interface (CLI) for user interaction. Role-based menus are provided for buyers, sellers, and admins.
 
-Configure your PostgreSQL database:
+---
 
-Create users and products tables (SQL scripts will be provided in the project).
-Run the application: java -jar target/ecommerce-console-app-1.0-SNAPSHOT.jar
+## Technology Stack
 
-About:
+- Programming Language: Java
+- Build Tool: Maven
+- Database: PostgreSQL
+- Version Control: Git/GitHub
 
-Project Name: E-Commerce Console Application - Bookstore
-Purpose: College assignment to practice Java, Maven, and database integration.
+---
+
+## Setup Instructions
+
+### Prerequisites
+- Java 11 or higher.
+- PostgreSQL installed, with a database created.
+- Maven installed.
+
+### Steps to Set Up
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/DanBowersJR/ecommerce-console-app.git
+   cd ecommerce-console-app
